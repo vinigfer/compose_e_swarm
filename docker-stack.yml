@@ -1,0 +1,11 @@
+version: '3'
+services:
+  web:
+    image: "nome_da_imagem:tag" 
+    ports:
+     - "5000:5000"
+    volumes:
+     - .:/code
+     - /tmp:/tmp
+  redis:
+    image: "redis:alpine"
